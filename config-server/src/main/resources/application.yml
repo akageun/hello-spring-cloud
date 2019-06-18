@@ -1,0 +1,13 @@
+server:
+  port: 9092
+
+spring:
+  profiles:
+    active: local
+
+  cloud:
+    config:
+      profile:
+      server:
+        native:
+          search-locations: classpath:client-config
